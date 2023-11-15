@@ -1,0 +1,67 @@
+{
+	"Create hpp class boilerplate":{
+		"prefix": "hpp",
+		"body": [
+			"#ifndef ${2}_HPP",
+			"#define ${2}_HPP",
+			"",
+			"# include <iostream>",
+			"",
+			"class ${1}",
+			"{",
+			"\tprivate:",
+			"",
+			"\tpublic:",
+			"\t\t${1}();",
+			"\t\t~${1}();",
+			"\t\t${1}(${1} const &copy);",
+			"\t\t${1}\t&operator=(${1} const &copy);",
+			"};",
+			"",
+			"#endif",
+			""
+		],
+		"description": "Create a boilerplate for a C++ class"
+	},
+	"Create cpp for class boilerplate":{
+		"prefix": "cpp",
+		"body": [
+			"#include \"${1}.hpp\"",
+			"",
+			"${1}::${1}()",
+			"{",
+			"}",
+			"",
+			"${1}::~${1}()",
+			"{",
+			"}",
+			"",
+			"${1}::${1}(${1} const &copy)",
+			"{",
+			"/* Class::Class(const Class &copy) : someValue(copy.someValue) {} */",
+			"}",
+			"",
+			"${1}\t&${1}::operator=(const ${1} &copy)",
+			"{",
+			"\t// if (this != &copy) {",
+			"\t\t// someValue = copy.someValue;",
+			"\t// }",
+			"\t// return *this;",
+			"}",
+			""
+		],
+		"description": "Create a boilerplate for a C++ class code"
+	},
+	"MyUppercaseVariable": {
+		"prefix": "upper",
+		"body": [
+		  "std::string ${1:inputVariable};",
+		  "std::cout << \"Enter the input variable: \";",
+		  "std::cin >> ${1:inputVariable};",
+		  "${1/(.*)/${1:/upcase}/}",
+		  "$0"
+		],
+		"description": "Prompt for input and transform to uppercase"
+	  }
+}
+
