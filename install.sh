@@ -33,4 +33,4 @@ EOF
 
 read -n 1 ans
 
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && cp -R nvim ~/.config/ && nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim --depth 1 && cp -R nvim ~/.config/ && nvim
