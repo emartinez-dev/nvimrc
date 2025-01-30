@@ -10,6 +10,7 @@
 --
 require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  require 'plugins/barbar', -- Tabs bar
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
