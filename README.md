@@ -17,7 +17,7 @@ in order to kickstart my config, after a lot of time using NvChad
 Execute this command to set up my Neovim configuration for Linux / MacOS:
 
 ```bash
-git clone https://github.com/emartinez-dev/nvimrc.git ~/.config/nvimrc
+git clone git@github.com/emartinez-dev/nvimrc.git ~/.config/nvim
 ```
 
 After the clone and installation, it will open neovim and finish the
