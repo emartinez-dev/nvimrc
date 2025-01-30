@@ -2,11 +2,9 @@
 
 ## Overview
 
-Welcome to my Neovim configuration! 
-
-Based on the [NvChad](https://github.com/NvChad/NvChad) template, I've tailored it to suit my preferences while
-keeping it open for anyone interested in trying Neovim. This repository is
-mainly for myself, but feel free to try it!
+Welcome to my Neovim configuration! I have used
+https://github.com/dam9000/kickstart-modular.nvim?tab=readme-ov-file
+in order to kickstart my config, after a lot of time using NvChad
 
 ## Pre-requisites
 
@@ -18,8 +16,8 @@ mainly for myself, but feel free to try it!
 
 Execute this command to set up my Neovim configuration for Linux / MacOS:
 
-```bash 
-git clone https://github.com/emartinez-dev/nvimrc.git && cd nvimrc && ./install.sh
+```bash
+git clone https://github.com/emartinez-dev/nvimrc.git ~/.config/nvimrc
 ```
 
 After the clone and installation, it will open neovim and finish the
@@ -31,21 +29,15 @@ necessary for features like autocompletion and syntax highlighting.
 Just remove this folders to uninstall anything related to neovim:
 
 ```bash 
-rm -rf ~/.config/nvim/ rm -rf ~/.local/share/nvim/
+rm -rf ~/.config/nvim/ ~/.local/share/nvim/ ~/.local/state/nvim/
 ```
 
 ## Features
 
-- **NvChad based:** Utilizing NvChad as a foundation for a powerful Neovim
-setup.
 - **Customization:** I've configured the template to align with my coding style
-and preferences, but refer to the
+and preferences.
 - **Plugins:** A curated selection to enhance your coding experience.
 - **Key Mappings:** Intuitive mappings for improved workflow.
-
-### Visual customization
-
-To change the theme, use the theme switcher `<leader> + th`. My favourite is `onedark`.
 
 ### Key Remappings
 
@@ -67,17 +59,6 @@ To change the theme, use the theme switcher `<leader> + th`. My favourite is `on
 | `<leader>tq`  | `:tabclose<cr>`| Close the current tab                               |
 | `<leader>tn`  | `:tabnext<cr>` | Switch to the next tab                              |
 | `<leader>tp`  | `:tabprevious<cr>` | Switch to the previous tab                      |
-
-### Useful stuff
-
-| Feature                       | Description                            |
-| ----------------------------- | ---------------------------------------|
-| **NvChadUpdate**              | Update NvChad to the latest version wiuh `:NvChadUpdate`|
-| **Nvterm**                    | Terminal plugin for creating terminals inside nvim, create it vertical with `<leader> + v` and horizontal with `<leader> + h`. Escape the cursor out of the terminal with `<ctrl> + x`|
-| **NvCheatsheet**              | Auto-generated mappings cheatsheet module with grid and simple themes. Toggle with `:NvCheatsheet` or `<leader> + ch`.|
-| **Telescope.nvim**            | Highly extensible fuzzy finder over lists, learn the commands in the NvCheatsheet.|
-| **Nvim-tree.lua**             | File explorer tree for Neovim written in Lua. Use `<ctrl>n` to open it.|
-| **Nvim-ufo**                  | Automatically fold and unfold code blocks.|
 
 ## Feedback
 
