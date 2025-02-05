@@ -18,6 +18,7 @@ map('n', '<c-up>', '<c-w>+')
 map('n', '<c-down>', '<c-w>-')
 map('n', '<c-left>', '<c-w>>')
 map('n', '<c-right>', '<c-w><')
+map('n', '<c-b>', ':NvimTreeToggle<CR>')
 
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 

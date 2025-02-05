@@ -10,7 +10,14 @@
 --
 require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  require 'plugins/mason', -- LSP and stuff
+  require 'plugins/lsp-stuff', -- More LSP and stuff
+  require 'plugins/treesitter', -- Syntax highlighting
   require 'plugins/barbar', -- Tabs bar
+  require 'plugins/nvim-tree', -- File manager sidebar
+  require 'plugins/onedark', -- VSCode theme
+  require 'plugins/lualine', -- Status line
+  require 'plugins/telescope', -- Fuzzy finder
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
