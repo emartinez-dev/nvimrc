@@ -19,8 +19,10 @@ map('n', '<c-down>', '<c-w>-')
 map('n', '<c-left>', '<c-w>>')
 map('n', '<c-right>', '<c-w><')
 map('n', '<c-b>', ':NvimTreeToggle<CR>')
-
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
+map('n', '<leader>,', '``')
+map('n', '<leader>v', ':vsplit +term<CR>')
+map('t', '<Esc>', '<C-\\><C-n>')
 
 -- Diagnostic keymaps
 map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
